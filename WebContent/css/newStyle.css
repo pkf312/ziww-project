@@ -1047,7 +1047,7 @@ input.item_quantity:hover{
 .rsidebar h4 {
     font-size: 1.2em;
     color: #353F49;
-    text-transform: uppercase;
+    text-transform: none;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     margin-bottom: 1.2em;
@@ -1191,13 +1191,17 @@ input#amount {
     width: 100%;
     display: block;
     position: relative;
-    color: #fff;
+    color: #000;
     font-size: 1em;
     font-weight: 400;
     text-decoration: none;
 }
+.faq > li > a:visited{
+    
+}
 .faq > li > a:hover,.faq > li >a.active{
 	color: #000;
+    font-weight: bold;
 }
 .faq li a.active span {
 	-webkit-transform: rotatex(180deg);
