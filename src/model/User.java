@@ -1,5 +1,14 @@
 package model;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
+import javax.persistence.UniqueConstraint;
+
+@Entity
+@Table( name = "USERS",
+		uniqueConstraints = {@UniqueConstraint(columnNames = {"firstname", "lastname"})}
+)
+
 public class User {
 
 	private String firstName;
